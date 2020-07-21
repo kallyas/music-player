@@ -1,19 +1,19 @@
-oxRule("body", {
-  margin: "0",
-});
+// OxRule("body", {
+//   margin: "0",
+// });
 
-oxRule("*", {
-  boxSizing: "border-box",
-});
+// OxRule("*", {
+//   boxSizing: "border-box",
+// });
 
-var header = ox("div").css({
+var header = Ox("div").css({
   padding: "15px",
   position: "sticky",
   top: 0,
   zIndex: 200,
 });
 
-var searchInput = ox("input", header)
+var searchInput = Ox("input", header)
   .css({
     backgroundColor: "#555",
     padding: "20px",
