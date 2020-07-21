@@ -1,1 +1,0 @@
-../../../../source/UI/js/Panel/SplitPanel.js

@@ -1,1 +1,0 @@
-../../../../source/UI/js/Map/MapRectangle.js

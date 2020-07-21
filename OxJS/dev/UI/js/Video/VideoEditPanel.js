@@ -1,1 +1,0 @@
-../../../../source/UI/js/Video/VideoEditPanel.js
