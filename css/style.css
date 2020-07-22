@@ -32,7 +32,7 @@ input::placeholder {
 }
 
 .search {
-  font-size: 3em;
+  font-size: 2em;
   color: #999999;
   position: absolute;
   right: 30px;
@@ -126,4 +126,79 @@ button {
 
 .fa-pause {
   visibility: hidden;
+}
+
+.player-container {
+  background-color: #333333;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  visibility: visible;
+  animation: overlay 0.5s cubic-bezier(0.3, 0, 0, 1);
+}
+
+@keyframes overlay {
+  from {
+    transform: translate(-50%);
+    opacity: 0;
+  }
+}
+
+.cover {
+  padding: 50px;
+  position: relative;
+  perspective: 500px;
+  overflow: hidden;
+  height: 40vh;
+}
+
+.cover img {
+  position: absolute;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  object-fit: contain;
+}
+
+.bg-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(-25%) scale(1.1);
+  left: 0;
+  top: 0;
+  filter: blur(20px) contrast(0.5) saturate(3);
+  z-index: -1;
+}
+
+.player-content {
+  padding: 0 30px;
+}
+
+.seekbar {
+  height: 5px;
+  position: relative;
+  background-color: #bbbbbb;
+  margin-bottom: 5px;
+}
+
+.percent-bar {
+  height: 100%;
+  background-color: #ff0066;
+  width: 5%;
+}
+
+.seek-circle {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
