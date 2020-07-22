@@ -1,4 +1,4 @@
-const BASE_URL = "https://itunes.apple.com/search";
+const BASE_URL = "https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search";
 
 let searchInput = document.querySelector(".search-input");
 let albumsContainer = document.querySelector(".albums-container");
