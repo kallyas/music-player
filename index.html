@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0d67f6bb4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HTML Music APp</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/0d67f6bb4c.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/style.css">
-	<title>HTML Music APp</title>
-</head>
-
-<body>
-	<header>
-		<input class="search-input" placeholder="Search...">
-		<div class="search">
-			<i class="fas fa-search"></i>
-		</div>
-	</header>
-	<div class="albums-container">
-		<h1>Albums</h1>
-		<div class="wrapper">
-			<div class="album-count">
-				<div class="name"></div>
-			</div>
-		</div>
-	</div>
-	<div class="tracks-container">
-		<h1>Tracks</h1>
-		<div class="song-container"></div>
-	</div>
-	<script src="js/app.js"></script>
-</body>
-
+  <body>
+    <header>
+      <input class="search-input" placeholder="Search..." />
+      <div class="search">
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+    <div class="albums-container">
+      <h1>Albums</h1>
+      <div class="wrapper">
+        <div class="album-count">
+          <div class="name"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tracks-container">
+      <h1>Tracks</h1>
+      <div class="song-container"></div>
+    </div>
+    <div class="player-container">
+      <div class="cover">
+        <img src="" />
+      </div>
+      <div class="bg-filter"></div>
+      <div class="player-content">
+        <div class="seekbar">
+          <div class="percent-bar"></div>
+          <div class="seek-circle"></div>
+        </div>
+        <div class="current-time">0:00</div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
 </html>
