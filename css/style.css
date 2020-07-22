@@ -178,6 +178,13 @@ button {
   padding: 0 30px;
 }
 
+.player-content h3 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
 .seekbar {
   height: 5px;
   position: relative;
@@ -201,4 +208,37 @@ button {
   border: 1px solid #aaaaaa;
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+.current-time {
+  float: left;
+  color: #666666;
+}
+
+.duration {
+  float: right;
+  color: #666666;
+}
+
+.artist-name {
+  text-align: center;
+  color: #aaaaaa;
+}
+
+.controls {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls .fa-step-forward,
+.fa-step-backward {
+  font-size: 2em;
+}
+
+.fa-pause-circle {
+  padding: 10px;
+  color: #ffffff;
+  font-size: 4em;
 }
