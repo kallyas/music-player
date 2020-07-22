@@ -126,4 +126,38 @@ function showPlayer(d) {
   var trackNum = 1;
 
   let percent = 5;
+  audio.ontimeupdate = (d) => {
+    percent = audio.currentTime / audio.duration;
+    seekCircle.style.left = `${percent}%`;
+    percentBar.style.width = `${percent}%`;
+
+    let mins = Math.floor(audio.currentTime / 60);
+    let secs = Math.floor(audio.currentTime);
+    currentTime.textContent = `00 ${mins.substr(-2)}:00 ${secs.substr(-2)}`;
+
+    let mLeft = Math.floor(audio.duration - audio.currentTime) / 60;
+    let sLeft = Math.floor(audio.duration - sudio.currentTime);
+    duration.textContent = `00 ${mLeft.substr(-2)}:00 ${sLeft.substr(-2)}`;
+  };
+
+  function setSong(num) {
+    audio.src = album[trackNum].previewUrl;
+    trackName.content(`${trackNum}.${album[trackNum]}.${trackName}`);
+    artistName.content(album[trackNum].artistName);
+  }
+
+  audio.onended = (d) => setSong(++trackNum);
 }
+
+/*
+onclick: function() {
+    playing = !playing;
+    if(playing) {
+        this.content("pause");
+        audio.play();
+    } else {
+        this.content('play');
+        audio.pause();
+    }
+}
+*/
